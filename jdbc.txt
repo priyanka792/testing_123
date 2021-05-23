@@ -1,0 +1,26 @@
+
+	
+	import java.sql.*;	
+
+	JDBC
+	
+	0. Get Driver (Connector)
+	- connecto jar should be in calsspath
+	1. Load Driver (Register Driver)
+		Class.forName("com.mysql.jdbc.Driver");
+	2. 
+		Connection conn = DriverManager.
+			getConnection("jdbc:mysql://localhost:3306/ajava","root","admin");
+			
+	3. PreparedStatement 
+		for (insert/update/delete/select)
+		
+		psmt =conn.prepareStatement(sql);
+		
+		2 methods
+		int result = psmt.executeUpdate() ; //return int (insert/update/delete)
+		
+		psmt.executeQuery(); //return resultset
+				
+		 
+	
